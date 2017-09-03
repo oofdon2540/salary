@@ -17,11 +17,11 @@ public class MontlySalary {
         // TODO code application logic here
         Scanner scan = new Scanner(System.in);
         System.out.println("Unify Ltd");
-        
+
         System.out.print("Please enter the department: ");
         String userPrompt = scan.nextLine();
-        
-      
+
+
        if(userPrompt.equalsIgnoreCase("Personal")){
             PersonalDep personal = new PersonalDep("Personal");
             System.out.printf("%s%n",personal);
@@ -35,10 +35,10 @@ public class MontlySalary {
             inventory.displayInfo();
         }
         else{
-            throw new IllegalArgumentException("Error. Please try again");
+           System.out.prinln("Please try again");
         }
-       
-        
-        
+
+
+
 }
 }
